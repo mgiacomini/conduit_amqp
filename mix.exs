@@ -5,7 +5,7 @@ defmodule ConduitAMQP.Mixfile do
     [
       app: :conduit_amqp,
       version: "0.6.4",
-      elixir: "~> 1.3",
+      elixir: "~> 1.13",
       build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
       deps: deps(),
@@ -46,10 +46,10 @@ defmodule ConduitAMQP.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:amqp, "~> 1.0 and >= 1.1.1"},
+      {:amqp, "~> 3.1"},
       {:connection, "~> 1.0"},
       {:poolboy, "~> 1.5"},
-      {:conduit, "~> 0.11"},
+      {:conduit, github: "mgiacomini/conduit", branch: "master", override: true},
       {:ex_doc, "~> 0.19.0", only: :dev},
       {:dialyxir, "~> 0.4", only: :dev},
       {:junit_formatter, "~> 3.0", only: :test},
