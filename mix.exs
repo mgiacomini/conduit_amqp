@@ -49,7 +49,7 @@ defmodule ConduitAMQP.Mixfile do
       {:amqp, "~> 3.1"},
       {:connection, "~> 1.0"},
       {:poolboy, "~> 1.5"},
-      {:conduit, github: "mgiacomini/conduit", branch: "master", override: true},
+      {:conduit, github: "conduitframework/conduit", branch: "master"},
       {:ex_doc, "~> 0.19.0", only: :dev},
       {:dialyxir, "~> 0.4", only: :dev},
       {:junit_formatter, "~> 3.0", only: :test},
